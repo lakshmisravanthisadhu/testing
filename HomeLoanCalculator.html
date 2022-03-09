@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body onload="start()">
+    <center>
+    <h1 style="color:red;">HOME LOAN EMI CALCULATOR</h1>
+    </center>
+    <div class="row">   
+        <h3>Loan Amount</h3>
+        <input  id="loanAmount" type="number" value="100000" onkeyup="calculateHomeLoan()"/>
+        <h3>Tenure</h3>
+        <input id="tenure" type="number"value="1" onkeyup="calculateHomeLoan()"/>
+        <h3>Interest Rate</h3>
+        <input id="interestRate" type="number" value="1" onkeyup="calculateHomeLoan()"/>
+    </div>
+    <div class="column">
+        <h3>Monthly Home Loan EMI</h3>
+        <output id="EMI" type="number"></output>
+        <h3>Principal Amount</h3>
+        <output id="principal" type="number"></output>
+        <h3>Interest Amount</h3>
+        <output id="interestAmount" type="number"></output>
+        <h3>Total Amount Payable</h3>
+            <output id="amountPayable" type="number"></output>
+    </div>
+    <br>
+    <h2>HomeLoan Amortization Schedule</h2>
+    <table id="fetch" border="2" class="table"></table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
